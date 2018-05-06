@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Desenha Jquery + Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="colorpicker/bootstrap-colorpicker.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1> Plugin para criar uma tela de desenho</h1>
+		<h3> Demo 1</h3>
+		<div id="exemplo1"></div>
+		<pre><code>		
+		&lt;div id="exemplo1"&gt;
+		&lt;script type="text/javascript"&gt;
+			$(function(){
+				$('#exemplo1').Desenhar('canvasExemplo1',300,300);
+			})
+		&lt;/script&gt;
+</code></pre>
+		<h3> Demo 2 </h3>
+		<p> Usando uma imagem no fundo</p>
+		<div id="exemplo2" style="background: url('Olhos.png') no-repeat"></div>
+		<pre><code>		
+		&lt;div id="exemplo2" style="background: url('Olhos.png') no-repeat"&gt;
+		&lt;script type="text/javascript"&gt;
+			$(function(){
+				$('#exemplo2').Desenhar('canvasExemplo2',1000,210);
+			})
+		&lt;/script&gt;
+</code></pre>
+
+<h4>Criado por <a href="http://lucasmiranda.com.br">Lucas Miranda</a>. Projeto Open Source disponível no GitHub <a href="https://github.com/lucasmiranda5/desenhar-jquery">https://github.com/lucasmiranda5/desenhar-jquery</a>. Para colaborar abra um ISSUE ou envie um Pull Request</h4>
+	</div>
+	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="colorpicker/bootstrap-colorpicker.min.js"></script>
+	<script type="text/javascript" src="js/desenharJquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$('#exemplo1').Desenhar('canvasExemplo1',300,300);
+			$('#exemplo2').Desenhar('canvasExemplo2',1000,210);
+		})
+	</script>
+</body>
+</html>

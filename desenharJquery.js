@@ -28,6 +28,7 @@ jQuery.fn.Desenhar = function(idCanvas,Width,Height) {
 	canvas.setAttribute('height', Height);
 	canvas.setAttribute('id', idCanvas);
 	this.append(canvas);
+	$('#'+idCanvas).css('border','1px solid #000');
 	if(typeof G_vmlCanvasManager != 'undefined') {
 		canvas = G_vmlCanvasManager.initElement(canvas);
 	}
